@@ -7,6 +7,13 @@
 }
 
 
+ul {
+	list-style-type: none; 
+	margin:0; 
+	padding:0; 
+}
+
+
 /* APP & CHART WRAPPER */
 #app {
 	margin: 0 auto;
@@ -16,9 +23,44 @@
 	display: flex;
 	margin: 15px auto 0 auto;
 }
+.wrapper .chart {
+	width: 100%;
+}
 .wrapper .chart:nth-of-type(1) {
 	margin-right: 0.5rem;
 }
+
+
+/* ARTICLE ENTRIES */
+.scrollyteller .sticky {
+	color: white;
+	height: 500px;
+	text-align: center;
+	width: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+.scrollyteller .step-list {
+	position: relative;
+}
+.scrollyteller .step {
+	/*border: 1px solid red;*/
+	margin: 75% auto;
+	max-width: 400px;
+	text-align: center;
+}
+.scrollyteller .step:first-of-type {
+	margin-top: 50%;
+}
+.scrollyteller .step:last-of-type {
+	padding-bottom: 100%;
+}
+
+.scrollyteller .step > p {
+	background: rgba(255,255,255,0.8);
+}
+
 
 /* POSTMEDIA STYLES */
 #app h1 {
