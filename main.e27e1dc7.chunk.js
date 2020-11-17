@@ -48,25 +48,22 @@ var init = /*#__PURE__*/function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            console.log('hello, world'); // instantiate the scrollama
-
+            // instantiate the scrollama
             scroller = scrollama__WEBPACK_IMPORTED_MODULE_6___default()();
-            iframe = document.querySelector(".scrollyteller .chart > iframe"); // setup the instance, pass callback functions
+            iframe = document.querySelector('.scrollyteller .chart > iframe'); // setup the instance, pass callback functions
 
             scroller.setup({
               offset: 0.75,
               step: '.step'
             }).onStepEnter(function (resp) {
-              console.log(resp);
-              var id = 3; // { element, index, direction }
-
+              // { element, index, direction }
               iframe.src = iframe.src.replace(/#slide-.*/, '') + '#slide-' + resp.index;
             }).onStepExit(function (resp) {// { element, index, direction }
             }); // setup resize event
 
             window.addEventListener("resize", scroller.resize);
 
-          case 5:
+          case 4:
           case "end":
             return _context.stop();
         }
