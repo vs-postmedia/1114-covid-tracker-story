@@ -11,10 +11,9 @@ import css from './css/main.css';
 
 // JS
 const init = async () => {
-	 console.log('hello, world');
 	// instantiate the scrollama
 	const scroller = scrollama();
-	const iframe = document.querySelector(".scrollyteller .chart > iframe");
+	const iframe = document.querySelector('.scrollyteller .chart > iframe');
 
 	// setup the instance, pass callback functions
 	scroller
@@ -23,8 +22,6 @@ const init = async () => {
 			step: '.step',
 		})
 		.onStepEnter(resp => {
-			console.log(resp)
-			const id = 3;
 			// { element, index, direction }
 			iframe.src = iframe.src.replace(/#slide-.*/, '') + '#slide-' + resp.index;
 		})

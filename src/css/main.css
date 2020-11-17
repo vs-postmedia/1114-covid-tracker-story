@@ -7,11 +7,7 @@
 }
 
 
-ul {
-	list-style-type: none; 
-	margin:0; 
-	padding:0; 
-}
+
 
 .italic {
 	color: var(--grey02);
@@ -63,7 +59,6 @@ ul {
 	position: relative;
 }
 .scrollyteller .step {
-	/*border: 1px solid red;*/
 	margin: 75% auto;
 	max-width: 400px;
 	text-align: center;
@@ -72,7 +67,8 @@ ul {
 	margin-top: -25%;
 }
 .scrollyteller .step:last-of-type {
-	padding-bottom: 100%;
+	margin-bottom: 0;
+	padding-bottom: 50%;
 }
 
 .scrollyteller .step > p {
